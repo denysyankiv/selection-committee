@@ -1,0 +1,23 @@
+version: "3.9"
+
+services:
+  tomcat:
+    image: tomcat:9
+    volumes:
+      - ./target/sc.war:/usr/local/tomcat/webapps/ROOT.war
+    ports:
+      - "8080:8080"
+  db:
+    image: mysql:8
+    volumes:
+#      - db_data:/var/lib/mysql
+      - "./scripts/init.sql:/docker-entrypoint-initdb.d/1.sql"
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: pass
+      MYSQL_USER: committee-root
+      MYSQL_PASSWORD: committee-root
+      MYSQL_DATABASE: selection-committee-db
+    ports:
+      - "3306:3306"
+
