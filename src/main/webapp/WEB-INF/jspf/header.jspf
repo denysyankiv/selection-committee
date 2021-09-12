@@ -1,0 +1,60 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img
+                src="${pageContext.request.contextPath}/WEB-INF/img/logo.png"
+                height="36"> </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarColor01" aria-controls="navbarColor01"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor03">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><fmt:message
+                            key="label.navbar.home"/></a>
+                </li>
+                <%--If user not authorized--%>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><fmt:message
+                            key="label.navbar.faculties_info"/></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><fmt:message
+                            key="label.navbar.contacts"/></a>
+                </li>
+
+                <%--If user not authorized--%>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><fmt:message
+                            key="label.navbar.entrant_register"/></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><fmt:message
+                            key="label.navbar.login"/></a>
+                </li>
+
+                <%--If user IS authorized--%>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><fmt:message
+                            key="label.navbar.logout"/></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle"
+                       data-bs-toggle="dropdown" href="#" role="button"
+                       aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else
+                            here</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Separated link</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

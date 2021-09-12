@@ -18,7 +18,7 @@ public class Examination {
   }
 
   private List<EntrantInfo> entrantInfos;
-  private Faculty faculty;
+  private FacultyDTO facultyDTO;
   private boolean finalized;
 
 }

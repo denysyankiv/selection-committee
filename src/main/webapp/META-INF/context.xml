@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Context>
+    <!--  <Resource-->
+    <!--    name="jdbc/database"-->
+    <!--    auth="Container"-->
+    <!--    type="javax.sql.DataSource"-->
+    <!--    username="root"-->
+    <!--    password="pass"-->
+    <!--    driiverClassName="com.mysql.cj.jdbc.Driver"-->
+    <!--    url="jdbc:mysql://localhost:3306/mydatabase"-->
+    <!--    maxActive="10"-->
+    <!--    maxIdle="4"-->
+    <!--    validationQuery="SELECT 1"-->
+    <!--  />-->
+<!--    <Resource name="jdbc/selection-committee-db"-->
+
+<!--              auth="Container"-->
+<!--              type="javax.sql.DataSource"-->
+
+<!--              maxTotal="100" maxIdle="30" maxWaitMillis="10000"-->
+
+<!--              defaultAutoCommit="false"-->
+<!--              defaultTransactionIsolation="READ_COMMITTED"-->
+
+<!--              driverClassName="com.mysql.cj.jdbc.Driver"-->
+<!--              username="committee-root" password="committee-root"-->
+
+<!--              url="jdbc:mysql://db:3306/selection-committee-db"-->
+<!--    />-->
+
+    <Resource name="jdbc/selection-committee-db"
+
+      auth="Container"
+      type="javax.sql.DataSource"
+
+      maxTotal="100" maxIdle="30" maxWaitMillis="10000"
+
+      defaultAutoCommit="false"
+      defaultTransactionIsolation="READ_COMMITTED"
+
+      driverClassName="com.mysql.cj.jdbc.Driver"
+      username="root" password="pass"
+
+      url="jdbc:mysql://localhost:3306/selection-committee-db"
+    />
+</Context>
+

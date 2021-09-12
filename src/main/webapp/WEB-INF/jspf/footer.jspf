@@ -1,0 +1,6 @@
+<footer class="fixed-bottom">
+    <div>
+        <p id="version_tag"></p>
+        <p id="footer_text">selection committee footer</p>
+    </div>
+</footer>
